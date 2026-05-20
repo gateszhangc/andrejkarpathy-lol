@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrej Karpathy</title>
+  <meta name="description" content="Andrej Karpathy is an AI researcher and educator. Founding member of OpenAI, former Director of AI at Tesla Autopilot, architect of Stanford CS231n, and creator of educational deep learning content including Neural Networks: Zero to Hero.">
+  <meta name="keywords" content="Andrej Karpathy, deep learning, neural networks, machine learning, OpenAI, Tesla Autopilot, CS231n, computer vision, large language models, Zero to Hero, micrograd, AI researcher, AI educator, PyTorch, Software 2.0">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Andrej Karpathy">
+  <meta http-equiv="content-language" content="en">
+  <link rel="canonical" href="https://karpathy.ai/">
+
+  <meta property="og:title" content="Andrej Karpathy">
+  <meta property="og:description" content="Andrej Karpathy is an AI researcher and educator. Founding member of OpenAI, former Director of AI at Tesla, and lead instructor of Stanford CS231n.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://karpathy.ai/">
+  <meta property="og:image" content="./assets/logo.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Andrej Karpathy">
+  <meta name="twitter:description" content="AI researcher and educator. Deep learning, neural networks, LLMs, and training at scale.">
+
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrej Karpathy",
+    "description": "AI researcher and educator. Founding member of OpenAI and former Director of AI at Tesla Autopilot.",
+    "url": "https://karpathy.ai/",
+    "sameAs": [
+      "https://twitter.com/karpathy",
+      "https://github.com/karpathy",
+      "https://www.youtube.com/@AndrejKarpathy",
+      "https://scholar.google.com/citations?user=l8WuQJgAAAAJ"
+    ],
+    "jobTitle": "AI Researcher and Educator",
+    "knowsAbout": ["Deep Learning", "Neural Networks", "Computer Vision", "Large Language Models", "Autonomous Driving"]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#" class="nav-logo" aria-label="Andrej Karpathy home">
+        <img src="./assets/logo.png" alt="" width="32" height="32">
+        <span>Andrej Karpathy</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="https://mirofish.my/" class="nav-cta" target="_blank" rel="noopener noreferrer">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">AI Research &amp; Education</div>
+          <h1>Andrej Karpathy trains <span class="highlight">deep neural nets</span> on large datasets</h1>
+          <p class="hero-lead">I like to train deep neural nets on large datasets. This page collects my career timeline, teaching, writing, open-source projects, talks, and publications — from Stanford CS231n and Tesla Autopilot to LLM education on YouTube.</p>
+          <div class="hero-meta">
+            <div class="meta-pill">
+              <strong>OpenAI</strong>
+              <span>Founding member &amp; 2023–2024 return</span>
+            </div>
+            <div class="meta-pill">
+              <strong>Tesla</strong>
+              <span>Director of AI, Autopilot vision</span>
+            </div>
+            <div class="meta-pill">
+              <strong>Stanford CS231n</strong>
+              <span>First deep learning course architect</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="https://mirofish.my/" class="btn-primary" target="_blank" rel="noopener noreferrer">
+              Start Learning
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="https://github.com/karpathy" class="btn-outline" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          </div>
+          <div class="social-row">
+            <a href="https://twitter.com/karpathy" class="social-link" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+            <a href="https://www.youtube.com/@AndrejKarpathy" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://karpathy.github.io" class="social-link" target="_blank" rel="noopener noreferrer">Blog</a>
+            <a href="https://scholar.google.com/citations?user=l8WuQJgAAAAJ" class="social-link" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Overview</span>
+        <h2 class="section-title">What defines Karpathy's work in AI</h2>
+        <p class="section-desc">Andrej Karpathy is an AI researcher and educator known for bridging research, production systems, and clear explanations of how modern neural networks work.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Research at scale</h3>
+          <p>From ImageNet and video understanding at Google and DeepMind to Autopilot vision at Tesla — training and deploying neural networks on real-world data at production scale.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Teaching &amp; clarity</h3>
+          <p>Architect and lead instructor of Stanford CS231n. Today, educational videos on LLMs and neural networks reach learners through technical and general-audience tracks.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Build in public</h3>
+          <p>Open-source tools like micrograd and char-rnn, plus essays such as Software 2.0 and A Recipe for Training Neural Networks, shaped how many developers learn deep learning.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="career" class="alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Career</span>
+        <h2 class="section-title">Timeline from Toronto to OpenAI and Tesla</h2>
+        <p class="section-desc">A chronological view of roles, research, and milestones — aligned with the biography on <a href="https://karpathy.ai/" target="_blank" rel="noopener noreferrer">karpathy.ai</a>.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-entry">
+          <div class="timeline-year">2024 –</div>
+          <div class="timeline-body">
+            <h3>Educational videos on AI</h3>
+            <p>I create educational videos on AI on my <a href="https://www.youtube.com/@AndrejKarpathy" target="_blank" rel="noopener noreferrer">YouTube channel</a>. The videos come in two parallel tracks: a technical track and a general audience track.</p>
+            <ul>
+              <li>Technical track: Follow the <a href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank" rel="noopener noreferrer">Zero to Hero</a> playlist.</li>
+              <li><a href="https://www.youtube.com/watch?v=7xTGNNLPyMI" target="_blank" rel="noopener noreferrer">Deep Dive into LLMs like ChatGPT</a> covers under-the-hood fundamentals of LLMs.</li>
+              <li><a href="https://www.youtube.com/watch?v=EWvNQjAaOHw" target="_blank" rel="noopener noreferrer">How I use LLMs</a> is a practical guide with examples from my own life.</li>
+              <li><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank" rel="noopener noreferrer">Intro to Large Language Models</a> is an earlier parallel introduction.</li>
+            </ul>
+            <p>For all the latest, I spend most of my time on <a href="https://twitter.com/karpathy" target="_blank" rel="noopener noreferrer">X/Twitter</a> or <a href="https://github.com/karpathy" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+          </div>
+        </article>
+        <article class="timeline-entry">
+          <div class="timeline-year">2023 – 2024</div>
+          <div class="timeline-body">
+            <h3>OpenAI</h3>
+            <p>I came back to <a href="https://openai.com/" target="_blank" rel="noopener noreferrer">OpenAI</a> where I built a new team working on midtraining and synthetic data generation.</p>
+          </div>
+        </article>
+        <article class="timeline-entry">
+          <div class="timeline-year">2017 – 2022</div>
+          <div class="timeline-body">
+            <h3>Director of AI at Tesla</h3>
+            <p>I was the <a href="https://techcrunch.com/2017/06/20/tesla-hires-deep-learning-expert-andrej-karpathy-to-lead-autopilot-vision/" target="_blank" rel="noopener noreferrer">Director of AI at Tesla</a>, where I led the computer vision team of <a href="https://www.tesla.com/autopilot" target="_blank" rel="noopener noreferrer">Tesla Autopilot</a> and (very briefly) Tesla Optimus. My team handled in-house data labeling, neural network training, and deployment on Tesla's custom inference chip. See <a href="https://youtu.be/j0z4FweCy4M?t=2900" target="_blank" rel="noopener noreferrer">Tesla AI Day 2021</a> for more.</p>
+          </div>
+        </article>
+        <article class="timeline-entry">
+          <div class="timeline-year">2015 – 2017</div>
+          <div class="timeline-body">
+            <h3>OpenAI founding member</h3>
+            <p>I was a research scientist and a founding member at <a href="https://openai.com/index/introducing-openai/" target="_blank" rel="noopener noreferrer">OpenAI</a>.</p>
+          </div>
+        </article>
+        <article class="timeline-entry">
+          <div class="timeline-year">2011 – 2015</div>
+          <div class="timeline-body">
+            <h3>PhD at Stanford</h3>
+            <p>My PhD focused on convolutional/recurrent neural networks in computer vision, NLP, and their intersection. Adviser: <a href="http://vision.stanford.edu/" target="_blank" rel="noopener noreferrer">Fei-Fei Li</a>. I designed and was the primary instructor for <a href="http://cs231n.stanford.edu/" target="_blank" rel="noopener noreferrer">CS 231n: Convolutional Neural Networks for Visual Recognition</a> — growing from 150 students in 2015 to 750 in 2017. Internships at Google Brain (2011), Google Research (2013), and DeepMind (2015).</p>
+          </div>
+        </article>
+        <article class="timeline-entry">
+          <div class="timeline-year">2009 – 2011</div>
+          <div class="timeline-body">
+            <h3>MSc, University of British Columbia</h3>
+            <p>Worked with <a href="https://www.cs.ubc.ca/~van/" target="_blank" rel="noopener noreferrer">Michiel van de Panne</a> on learning controllers for physically-simulated figures — machine learning for agile robotics in simulation.</p>
+          </div>
+        </article>
+        <article class="timeline-entry">
+          <div class="timeline-year">2005 – 2009</div>
+          <div class="timeline-body">
+            <h3>BSc, University of Toronto</h3>
+            <p>Double major in computer science and physics with a minor in math. This is where I first got into deep learning, attending <a href="https://www.cs.toronto.edu/~hinton/" target="_blank" rel="noopener noreferrer">Geoff Hinton's</a> class and reading groups.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="talks">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Featured talks</span>
+        <h2 class="section-title">Talks, podcasts, and keynotes</h2>
+        <p class="section-desc">Selected appearances on LLMs, autonomous driving, PyTorch at Tesla, and the Software 2.0 stack.</p>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="https://www.youtube.com/watch?v=lXUZvyajciY" target="_blank" rel="noopener noreferrer">Dwarkesh podcast <span>2025</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=9Q9Yrj2BTek" target="_blank" rel="noopener noreferrer">YC AI Startup School <span>2025</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=8yqN-9hXqXk" target="_blank" rel="noopener noreferrer">GPU Mode <span>2024</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=7xTGNNLPyMI" target="_blank" rel="noopener noreferrer">Deep Dive into LLMs <span>2024</span></a>
+        <a class="link-item" href="https://karpathy.ai/stateofgpt.pdf" target="_blank" rel="noopener noreferrer">State of GPT @ Microsoft Build <span>2023</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=cdiD-9MMpb0" target="_blank" rel="noopener noreferrer">Lex Fridman podcast <span>2022</span></a>
+        <a class="link-item" href="https://youtu.be/j0z4FweCy4M" target="_blank" rel="noopener noreferrer">Tesla AI Day <span>2021</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=hx7BXih7zx8" target="_blank" rel="noopener noreferrer">Tesla Autonomy Day <span>2019</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=Io9JlgTkk3M" target="_blank" rel="noopener noreferrer">PyTorch at Tesla @ PyTorch DevCon <span>2019</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=hk3527Es84E" target="_blank" rel="noopener noreferrer">Building the Software 2.0 stack <span>2018</span></a>
+        <a class="link-item" href="https://www.youtube.com/watch?v=u6K5Rk2ZTaI" target="_blank" rel="noopener noreferrer">NVIDIA GTC Keynote with Jensen Huang <span>2015</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching" class="alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Teaching</span>
+        <h2 class="section-title">Courses, lectures, and learning resources</h2>
+        <p class="section-desc">From the first Stanford deep learning class to today's YouTube lectures on LLMs and neural networks from scratch.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <h4>Neural Networks: Zero to Hero</h4>
+            <p>Technical YouTube playlist building micrograd, makemore, and GPT-style models from scratch. <a href="https://karpathy.ai/zero-to-hero.html" target="_blank" rel="noopener noreferrer">Full series page</a>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <h4>Stanford CS231n</h4>
+            <p>Convolutional Neural Networks for Visual Recognition — course notes, syllabus, and 2016 lecture videos.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <h4>General-audience LLM videos</h4>
+            <p>Deep dives into how ChatGPT-style systems work and practical guides for using LLMs in everyday workflows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="link-grid" style="margin-top: 24px;">
+        <a class="link-item" href="https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ" target="_blank" rel="noopener noreferrer">Zero to Hero playlist</a>
+        <a class="link-item" href="https://cs231n.github.io/" target="_blank" rel="noopener noreferrer">CS231n course notes</a>
+        <a class="link-item" href="http://cs231n.stanford.edu/syllabus.html" target="_blank" rel="noopener noreferrer">CS231n syllabus</a>
+        <a class="link-item" href="https://www.reddit.com/r/cs231n" target="_blank" rel="noopener noreferrer">r/cs231n community</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Featured writing</span>
+        <h2 class="section-title">Essays and blog posts</h2>
+        <p class="section-desc">Popular posts on training neural networks, Software 2.0, RNNs, PhD advice, and more — across GitHub, Medium, and Bear blogs.</p>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="https://karpathy.github.io/2021/06/21/blockchain/" target="_blank" rel="noopener noreferrer">A from-scratch tour of Bitcoin in Python <span>Mar 2021</span></a>
+        <a class="link-item" href="https://karpathy.github.io/2019/04/25/recipe/" target="_blank" rel="noopener noreferrer">A Recipe for Training Neural Networks <span>Apr 2019</span></a>
+        <a class="link-item" href="https://karpathy.medium.com/software-2-0-a64152b37c35" target="_blank" rel="noopener noreferrer">Software 2.0 <span>Nov 2017</span></a>
+        <a class="link-item" href="https://karpathy.github.io/2016/09/07/phd/" target="_blank" rel="noopener noreferrer">A Survival Guide to a PhD <span>Sep 2016</span></a>
+        <a class="link-item" href="https://karpathy.github.io/2015/05/21/rnn-effectiveness/" target="_blank" rel="noopener noreferrer">The Unreasonable Effectiveness of Recurrent Neural Networks <span>May 2015</span></a>
+        <a class="link-item" href="https://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/" target="_blank" rel="noopener noreferrer">What I learned from competing against a ConvNet on ImageNet <span>Sep 2014</span></a>
+        <a class="link-item" href="https://karpathy.bearblog.dev/blog/" target="_blank" rel="noopener noreferrer">Current Bear blog</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Pet projects</span>
+        <h2 class="section-title">Open-source tools and experiments</h2>
+        <p class="section-desc">Educational and research code that helped many developers understand autograd, RNNs, arXiv discovery, and in-browser deep learning.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3><a href="https://github.com/karpathy/micrograd" target="_blank" rel="noopener noreferrer">micrograd</a></h3>
+          <p>A tiny scalar-valued autograd engine implementing reverse-mode autodiff over a dynamically built DAG, with a small neural net library and PyTorch-like API.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/karpathy/char-rnn" target="_blank" rel="noopener noreferrer">char-rnn</a></h3>
+          <p>Torch character-level language model built from LSTMs/GRUs/RNNs — paired with the famous blog post on RNN effectiveness.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://arxiv-sanity-lite.com/" target="_blank" rel="noopener noreferrer">arxiv-sanity-lite</a></h3>
+          <p>Discover relevant arXiv papers, search by similarity, and get recommendations — a from-scratch rewrite of the original arxiv-sanity project.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/karpathy/neuraltalk2" target="_blank" rel="noopener noreferrer">neuraltalk2</a></h3>
+          <p>Early image captioning in (lua)Torch, extended later with Justin Johnson to dense captioning.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://cs.stanford.edu/people/karpathy/convnetjs/" target="_blank" rel="noopener noreferrer">ConvNetJS</a></h3>
+          <p>Deep learning in JavaScript — train CNNs entirely in the browser with many interactive demos.</p>
+        </article>
+        <article class="card">
+          <h3><a href="https://github.com/karpathy/ulogme" target="_blank" rel="noopener noreferrer">ulogme</a></h3>
+          <p>Privacy-first productivity tracker — an alternative to cloud-based time tracking for developers.</p>
+        </article>
+      </div>
+      <p class="section-desc" style="margin-top: 24px;">Sometimes jokingly called the <strong>reference human for ImageNet</strong> after competing against an early ConvNet on 1,000-way classification. See the <a href="https://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/" target="_blank" rel="noopener noreferrer">blog post</a> and <a href="https://www.wired.com/2015/01/karpathy/" target="_blank" rel="noopener noreferrer">Wired article</a>.</p>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Publications</span>
+        <h2 class="section-title">Selected research papers</h2>
+        <p class="section-desc">Vision-language models, video classification, PixelCNN++, and web agents — <a href="https://scholar.google.com/citations?user=l8WuQJgAAAAJ" target="_blank" rel="noopener noreferrer">full list on Google Scholar</a>.</p>
+      </div>
+      <div class="pub-list">
+        <article class="pub-item">
+          <h4><a href="http://proceedings.mlr.press/v70/shi17a/shi17a.pdf" target="_blank" rel="noopener noreferrer">World of Bits: An Open-Domain Platform for Web-Based Agents</a></h4>
+          <p class="pub-meta">ICML 2017 — Tianlin Shi, Andrej Karpathy, Linxi Fan, Jonathan Hernandez, Percy Liang</p>
+        </article>
+        <article class="pub-item">
+          <h4><a href="https://openreview.net/pdf?id=BJrFC6ceg" target="_blank" rel="noopener noreferrer">PixelCNN++: A PixelCNN Implementation with Discretized Logistic Mixture Likelihood</a></h4>
+          <p class="pub-meta">ICLR 2017 — Tim Salimans, Andrej Karpathy, Xi Chen, Diederik P. Kingma, Yaroslav Bulatov</p>
+        </article>
+        <article class="pub-item">
+          <h4><a href="https://cs.stanford.edu/people/karpathy/main.pdf" target="_blank" rel="noopener noreferrer">Connecting Images and Natural Language (PhD thesis)</a></h4>
+          <p class="pub-meta">2016 — Andrej Karpathy</p>
+        </article>
+        <article class="pub-item">
+          <h4><a href="https://cs.stanford.edu/people/karpathy/deepimagesent/" target="_blank" rel="noopener noreferrer">Deep Visual-Semantic Alignments for Generating Image Descriptions</a></h4>
+          <p class="pub-meta">CVPR 2015 (Oral) — Andrej Karpathy, Li Fei-Fei</p>
+        </article>
+        <article class="pub-item">
+          <h4><a href="http://arxiv.org/abs/1409.0575" target="_blank" rel="noopener noreferrer">ImageNet Large Scale Visual Recognition Challenge</a></h4>
+          <p class="pub-meta">IJCV 2015 — Russakovsky, Deng, Su, Krause, et al.</p>
+        </article>
+        <article class="pub-item">
+          <h4><a href="https://cs.stanford.edu/people/karpathy/deepvideo/" target="_blank" rel="noopener noreferrer">Large-Scale Video Classification with Convolutional Neural Networks</a></h4>
+          <p class="pub-meta">CVPR 2014 (Oral) — Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul Sukthankar, Li Fei-Fei</p>
+        </article>
+        <article class="pub-item">
+          <h4><a href="http://cs.stanford.edu/people/karpathy/nips2012.pdf" target="_blank" rel="noopener noreferrer">Emergence of Object-Selective Features in Unsupervised Feature Learning</a></h4>
+          <p class="pub-meta">NIPS 2012 — Adam Coates, Andrej Karpathy, Andrew Ng</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Common questions about Andrej Karpathy</h2>
+        <p class="section-desc">Quick answers on background, teaching, and where to follow new work.</p>
+      </div>
+      <div class="faq-list">
+        <article class="faq-item">
+          <h4>Who is Andrej Karpathy?</h4>
+          <p>Andrej Karpathy is an AI researcher and educator. He was a founding member of OpenAI and later Director of AI at Tesla, where he led the computer vision team for Autopilot. At Stanford he architected CS231n, one of the university's most popular deep learning courses.</p>
+        </article>
+        <article class="faq-item">
+          <h4>What is he working on now?</h4>
+          <p>He creates educational videos on AI via YouTube — including the Zero to Hero technical series and general-audience explainers on large language models. Updates are most active on X/Twitter and GitHub.</p>
+        </article>
+        <article class="faq-item">
+          <h4>Where should I start learning from his content?</h4>
+          <p>Beginners interested in how LLMs work can start with intro and deep-dive videos on YouTube. Developers building intuition from scratch should follow the Zero to Hero playlist and micrograd repository.</p>
+        </article>
+        <article class="faq-item">
+          <h4>What is Software 2.0?</h4>
+          <p>Software 2.0 is Karpathy's framing where neural networks become the primary program — optimization finds weights instead of humans hand-writing all logic. The essay remains influential in ML engineering culture.</p>
+        </article>
+        <article class="faq-item">
+          <h4>What did he do at Tesla?</h4>
+          <p>As Director of AI, he led Autopilot vision: in-house labeling, training, and deployment on Tesla's custom inference hardware, with the long-term goal of scalable full self-driving.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="misc">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Misc</span>
+        <h2 class="section-title">More links and side projects</h2>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="https://karpathy.ai/books.html" target="_blank" rel="noopener noreferrer">Sci-fi books I've read</a>
+        <a class="link-item" href="http://lossfunctions.tumblr.com/" target="_blank" rel="noopener noreferrer">Loss function Tumblr</a>
+        <a class="link-item" href="https://cs.stanford.edu/people/karpathy/advice.html" target="_blank" rel="noopener noreferrer">Advice for undergrads</a>
+        <a class="link-item" href="https://cs.stanford.edu/people/karpathy/cnnembed/" target="_blank" rel="noopener noreferrer">t-SNE of CNN codes for ImageNet</a>
+        <a class="link-item" href="https://www.youtube.com/user/badmephisto/featured" target="_blank" rel="noopener noreferrer">Rubik's cube tutorials (badmephisto)</a>
+      </div>
+      <p class="section-desc" style="margin-top: 32px; text-align: center;">This site is a lightweight static tribute page. The official home page remains <a href="https://karpathy.ai/" target="_blank" rel="noopener noreferrer">karpathy.ai</a> — built with pure HTML and CSS, no heavy frameworks.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Andrej Karpathy — AI researcher &amp; educator. Content adapted from public biography and <a href="https://karpathy.ai/" target="_blank" rel="noopener noreferrer">karpathy.ai</a>.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.mobile-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle?.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
